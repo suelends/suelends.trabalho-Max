@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/cadastroMedico.css" rel="stylesheet">
+    <title>SMNB</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="cabecalho">
+            <div id="logo"></div>
+            <span id="login">
+                <a href="#">entre</a> <span class="black">ou</span><a href="#"> cadastre-se</a> 
+            </span> </section>
+
+            <section id="conteudo">
+                <div id="cadastroMedico">
+                <div id="textoCad"> <a href="file:///D:/4%20SEMESTRE/PROJETO%20INTERDISCIPLINAR/PROJETO/SITE/Projete%20Tela%20-%20Suelen/cadastroMedicos.html">CADASTRO MÉDICO</a></div>
+                </div>
+            </section>
+                <div id="formulario">
+                    <form action="url" method="post">
+                         <label id="Nome">Nome completo </label> <input class="cmpNome" type="text" name="Nome" maxlength="35" required>
+
+                        <label id="CPF">CPF</label> <input class="cmpCPF" type="text" name="CPF" maxlength="14" required> 
+
+                        <label id="Nasc">Data de Nascimento</label> <input class="cmpData" type="date" name="Nasc" maxlength="10" name="date"
+                         min="1800-01-01" max="2008-01-01" required>
+
+
+                        <label id="Idade">Idade</label>
+                        <input class="cmpIdade"type="number" min="08" max="90" name="Idade" required>
+
+                            <div id="Sexo">
+                                <fieldset id="style">
+                                    <legend>Sexo</legend>
+                                <input type="radio" name="Sexo" value="F"checked> Feminino
+                                <input type="radio" name="Sexo" value="M"> Masculino
+                                <input type="radio" name="Sexo" value="O"> Outro
+                                </fieldset>
+                            </div>
+
+                      <label id="End">Endereço</label> 
+                      <input class="cmpEnd"type="text" name="End" maxlength="25" required>
+
+                      <label id="CEP">CEP</label>
+                      <input class="cmpCep" type="text" name="CEP" maxlength="08" required>
+
+                      <label id="Cidades">CIDADE</label>
+                      <input class="cmpCidades" type="text" name="Cidades" maxlength="18" required>
+
+                    <label id="UF">UF</label>
+                         <select class="cmpUF" name="UF" required>
+                        <option value="Acre">AC</option>
+                        <option value="Alagoas">AL</option>
+                        <option value="Amapa">AP</option>
+                        <option value="Amazonas">AM</option>
+                        <option value="Bahia">BA</option>
+                        <option value="Ceara">CE</option>
+                        <option value="DistritoFederal">DF</option>
+                        <option value="Goias">GO</option>
+                        <option value="MaranhAo">MA</option>
+                        <option value="MatoGrosso">MG</option>
+                        <option value="MatroGSul">MS</option>
+                        <option value="MinasGerais">MG</option>
+                        <option value="Para">PA</option>
+                        <option value="Paraiba">PB</option>
+                        <option value="Parana">PR</option>
+                        <option value="Pernambuco">PE</option>
+                        <option value="Piaui">PI</option>
+                        <option value="RioDeJaneiro">RJ</option>
+                        <option value="RioGrandeNorte">RN</option>
+                        <option value="RioGrandeSul">RS</option>
+                        <option value="Rondonia">RO</option>
+                        <option value="Roraima">RR</option>
+                        <option value="SantaCatarina">SC</option>
+                        <option value="SaoPaulo">SP</option>
+                        <option value="Sergipe">SE</option>
+                        <option value="Tocantins">TO</option> </select>
+
+                        <label id="Cel">Celular</label>
+                        <input class="cmpCel" type="text" name="Cel" maxlength="14" required>
+
+                        <label id="Especialidade">Especialidade</label>
+                        <select class="cmpEsp" name="Especialidade" required>
+                         <option value="Alergia">Alergia Imunologia</option>
+                         <option value="Cardiologia">Cardiologia</option>
+                        <option value="CardioVascular">Cirurgia Cardiovascular</option> 
+                        <option value="Geral">Cirurgia Geral</option>  
+                        <option value="Pediatrica">Cirurgia Pediátrica</option>
+                        <option value="Plastica">Cirurgia Plástica</option>
+                        <option value="Vascular">Cirurgia Vascular</option>
+                        <option value="Medica">Cirugia Médica</option>
+                        <option value="Dermatologia">Dermatologia</option>
+                        <option value="Geriatria">Geriatria</option>
+                        <option value="Homeopatia">Homeopatia</option>
+                        <option value="Infectologia">Infectologia</option>
+                        <option value="Neurologica">Neurológia</option>
+                        <option value="Ortopedia">Ortopedia</option>
+                        <option value="Oftalmologia">Oftalmologia</option>
+                        <option value="Pediatra">Pediatra</option>
+                        <option value="Pneumologia">Pneumologia</option>
+                        <option value="Radiologia">Radiologia</option>
+                        <option value="Radioterapia">Radioterapia</option>
+                        </select>
+
+                        <label id="Email">E-mail</label>
+                        <input class="cmpEmail" type="text" name="Email" maxlength="50" required>
+
+                        <label id="CRM">CRM</label>
+                        <input class="cmpCRM"type="text" name="CRM" maxlength="09" required>
+
+                        <label id="Senha">Senha</label>
+                        <input class="cmpSenha" type="Password" name="Senha" maxlength="11" required>
+
+                                <input id="Cadastrar" type="submit" class="      name="Cadastrar" value="Cadastrar">
+
+                                 <div id="Imagem">
+                                Adicione uma selfie
+                         <input type="file" name="arquivo">
+                         
+                     </div>
+
+                </div>
+
+                <section id="rodape">
+            <div id="menu-rodape">
+                <a href="#sobre-nos">Sobre Nos</a><br />
+                <a href="#faleConosco">Fale Conosco</a><br />
+                <a href="#">Area do Candidato</a><br />
+                <span><a href="#">Consultas</a></span>
+            </div>
+            <span id="social-media"></span>
+        </section>
+    </div>
+</body>
+</html>
