@@ -23,7 +23,6 @@ html, body {
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-/* ============= FORMATACAO GERAL =========== */
 .container {
     position: relative;
     margin-left: auto;
@@ -50,7 +49,7 @@ html, body {
     margin-top: 15px;
     margin-left: 30px;
     display: inline-block;
-    background: url(logo.png);
+    background: url(../img/logo.png);
 }
 
 #login {
@@ -72,7 +71,7 @@ html, body {
     text-transform: lowercase;
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
-
+	
 .black {
     color: #000000;
     text-decoration: none;
@@ -81,7 +80,7 @@ html, body {
 /* ============= CONTEÚDO===========*/
 
 /* LOGO CADASTRO */
-#cadastroPaciente {
+#cadastroMedico {
 position: absolute;
 width: 1180px;
 height: 170px;
@@ -109,7 +108,7 @@ font-feature-settings: 'pnum' on, 'lnum' on;
 
 }
 
-#textoCad a:link, a:visited {
+#textoCad a:visited {
     text-decoration: none ;
         color: #F0FFFF;
  }
@@ -123,7 +122,7 @@ font-feature-settings: 'pnum' on, 'lnum' on;
 
 #textoCad a:active {
     text-decoration: none;
-}
+  }
 /* CONTEUDO */
 #formulario {
 border-top: 5px solid #87CEEB;
@@ -132,6 +131,7 @@ width: 1180px;
 height: 1086px;
 left: 0px;
 top: 290px;
+overflow:auto;
 }
 
 /* Nome */
@@ -196,7 +196,6 @@ width: 450px;
 bottom: 81.22%;
 background: #FFFFFF;
 border-radius: 15px;
-font-family: tahoma;
 font-size: 19px;
 box-shadow: inset 0px 4.37949px
  4.37949px rgba(0, 0, 0, 0.25);}
@@ -219,8 +218,8 @@ text-transform: uppercase;
 color: #000000;
 }
 
-/* CampoNasci */
 .cmpData {
+/* CampoNasci */
 position: absolute;
 left: 7.21%;
 right: 51.91%;
@@ -230,9 +229,43 @@ width: 305px;
 background: #FFFFFF;
 border-radius: 15px;
 font-family: tahoma;
-font-size: 19px;
+font-size: 23px;
 box-shadow: inset 0px 4.37949px
  4.37949px rgba(0, 0, 0, 0.25); 
+}
+
+#Idade {
+/* Idade */
+position: absolute;
+left: 54.97%;
+right: 37.89%;
+top: 22.01%;
+bottom: 75.05%;
+font-family: tahoma;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 27px;
+text-transform: uppercase;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #000000;
+
+}
+
+.cmpIdade {
+	/* CampoCEP */
+position: absolute;
+left: 54.46%;
+right: 28.49%;
+top: 24.49%;
+bottom: 71.55%;
+width: 140px;
+background: #FFFFFF;
+border-radius: 15px;
+font-family: tahoma;
+font-size: 19px;
+box-shadow: inset 0px 4.37949px 
+4.37949px rgba(0, 0, 0, 0.25) ; 
 }
 
 #Sexo {
@@ -241,7 +274,7 @@ position: absolute;
 left: 7.21%;
 right: 86.94%;
 top: 31.33%;
-width: 455px;
+width: 500px;
 font-family: tahoma;
 font-style: normal;
 font-weight: normal;
@@ -283,7 +316,7 @@ width: 450px;
 background: #FFFFFF;
 border-radius: 15px;
 font-family: tahoma;
-font-size: 17px;
+font-size: 19px;
 box-shadow: inset 0px 4.37949px 
 4.37949px rgba(0, 0, 0, 0.25);
 }
@@ -315,12 +348,12 @@ bottom: 53.13%;
 background: #FFFFFF;
 border-radius: 15px;
 font-family: tahoma;
-font-size: 17px;
+font-size: 19px;
 box-shadow: inset 0px 4.37949px
 4.37949px rgba(0, 0, 0, 0.25);
 }
 
-#Cidade{
+#Cidades{
     /* Cidade */
 position: absolute;
 left: 7.89%;
@@ -337,8 +370,9 @@ font-feature-settings: 'pnum' on, 'lnum' on;
 color: #000000;
 }
 
-.cmpCidade {
     /* CampoCidade */
+
+.cmpCidades {
 position: absolute;
 left: 6.79%;
 right: 52.33%;
@@ -347,8 +381,9 @@ bottom: 44.11%;
 width: 450px;
 background: #FFFFFF;
 border-radius: 15px;
+text-align:  10px;
 font-family: tahoma;
-font-size: 17px;
+font-size: 19px;
 box-shadow: inset 0px 4.37949px
 4.37949px rgba(0, 0, 0, 0.25);
 }
@@ -379,12 +414,44 @@ top: 51.93%;
 bottom: 44.11%;
 width: 80px;
 font-family: tahoma;
-font-size: 15px;
+font-size: 17px;
 border-radius: 15px;
 font-family: tahoma;
 font-size: 17px;
 background: #FFFFFF;
 box-shadow: inset 0px 4.37949px
+4.37949px rgba(0, 0, 0, 0.25);
+}
+
+#Especialidade {
+	/* Especialidade */
+position: absolute;
+left: 54.46%;
+right: 29.4%;
+top: 58.56%;
+bottom: 39.13%;
+font-family: tahoma;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 27px;
+text-transform: uppercase;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #000000;
+}
+
+.cmpEsp {
+	/* CampoEspecialidade */
+position: absolute;
+left: 53.61%;
+right: 16.31%;
+top: 61.05%;
+bottom: 34.99%;
+background: #FFFFFF;
+border-radius: 15px;
+font-family: tahoma;
+font-size: 19px;
+box-shadow: inset 0px 4.37949px 
 4.37949px rgba(0, 0, 0, 0.25);
 }
 
@@ -416,9 +483,10 @@ width: 450px;
 background: #FFFFFF;
 border-radius: 15px;
 font-family: tahoma;
-font-size: 17px;
+font-size: 19px;
 box-shadow: inset 0px 4.37949px 
-4.37949px rgba(0, 0, 0, 0.25);}
+4.37949px rgba(0, 0, 0, 0.25);
+}
 
 #Email {
     /* E-mail */
@@ -435,7 +503,6 @@ line-height: 27px;
 text-transform: uppercase;
 font-feature-settings: 'pnum' on, 'lnum' on;
 color: #000000;
-
 }
 
 .cmpEmail {
@@ -449,9 +516,42 @@ width: 450px;
 background: #FFFFFF;
 border-radius: 15px;
 font-family: tahoma;
-font-size: 17px;
+font-size: 19px;
 box-shadow: inset 0px 4.37949px 
 4.37949px rgba(0, 0, 0, 0.25);
+}
+
+#CRM {
+	/* CRM */
+position: absolute;
+left: 54.55%;
+right: 29.31%;
+top: 66.85%;
+bottom: 30.11%;
+font-family: tahoma;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 27px;
+text-transform: uppercase;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #000000;
+
+}
+
+.cmpCRM {
+	/* CampoCRM */
+position: absolute;
+left: 53.78%;
+right: 29.17%;
+top: 69.43%;
+bottom: 26.61%;
+background: #FFFFFF;
+box-shadow: inset 0px 4.37949px
+4.37949px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+font-family: tahoma;
+font-size: 19px;
 }
 
 #Senha {
@@ -480,9 +580,9 @@ top: 78.18%;
 bottom: 17.86%;
 width: 450px;
 background: #FFFFFF;
-border-radius: 15px;
+border-radius: 25px;
 font-family: tahoma;
-font-size: 17px;
+font-size: 19px;
 box-shadow: inset 0px 4.37949px 
 4.37949px rgba(0, 0, 0, 0.25);
 }
@@ -509,7 +609,7 @@ color: #000000;
     /* Cadastrar */
 position: absolute;
 left: 40.71%;
-right: 39.86%
+right: 39.86%;
 top: 94.84%;
 height: 70px;
 bottom: 1.78%;
@@ -529,8 +629,7 @@ border-radius: 15px;
 #rodape {
     position: absolute;
     width: 1179px;
-    height: 275px;
-    left: 0px;
+    height: 175px;
     top: 1383px;
     background: #00BFFF;
 }
@@ -538,16 +637,21 @@ border-radius: 15px;
 #menu-rodape{
     width: 216px;
     height: 133px;
-    margin-top: 100px;;
+    margin-top: 35px;;
     margin-left: 56px;
     display: inline-block;
-    text-decoration: none;
     font-family: Poly;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 30px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+#rodape-logo {
+    width: 130px;
+    height: 110px;
+    margin-top: 35px;
+    margin-right: 35px;
+    float: right;
+    background: url(../img/logo.png);
 }
 
 #menu-rodape a{
