@@ -40,7 +40,7 @@ body{
     margin: 0 auto;
 }
 
-.login input[type="text"], input[type="password"]{
+.login input[type="email"], input[type="password"]{
     outline: 0;
     border-radius: 30px;
     background: #c0c0c0;
@@ -52,12 +52,12 @@ body{
     font-size: 14px;
 }
 
-.login input[type="text"]:hover, input[type="password"]:hover{
+.login input[type="email"]:hover, input[type="password"]:hover{
     background-color: #FFF;
     transition: all 1s ease 0s;
 }
 
-.login input[type="text"]:focus, input[type="password"]:focus{
+.login input[type="email"]:focus, input[type="password"]:focus{
     background-color: #FFF;
     transition: all 1s ease 0s;
 }
