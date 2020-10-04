@@ -1,262 +1,125 @@
-html, body {
-    height: 100%;
+body{
+    padding: 0;
+    margin: 0;
+    
 }
-
-.texto{
-    font-family: Roboto;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-}
-
-.title{
-
-    font-family: Poly;
-    font-size: 25px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-
-}
-
 .container {
+
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1180px;
+    z-index: 1;
+    opacity: 99%;
+    max-width: 1024px;
+    height: 600px;
+    margin: 200px auto 100px;
+    border-radius: 30px ;
+    box-shadow: 0 0 10px 0 #c0c0c0;
  }
 
-/* ============= CABECALHO =========== */
-#cabecalho{
-    position: absolute;
-    width: 1180px;
-    height: 120px;
-    left: 0px;
-    top: 0px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+/* ============= AREA LOGIN =========== */
+.area-login{
+    width: 405px;
+    height: 100%;
+    float: left;
     background: #00BFFF;
+    border-radius: 30px 0 0 30px;
 }
 
-#logo {
-    width: 130px;
-    height: 110px;
-    margin-top: 15px;
-    margin-left: 30px;
-    display: inline-block;
+                /* -- LOGO -- */
+.logo{
+    background: url(../img/large2.png)no-repeat;
+    width: 300px;
+    height: 250px;
+    margin: 60px auto;
+}
+                /* -- LOGIN -- */
 
-    background: url(../img/logo.png);
+.login{
+    width: 300px;
+    margin: 0 auto;
 }
 
-#login {
-    position: absolute;
-    width: 240px;
-    height: 34px;
-    left: 886px;
-    top: 65px;
-    font-size: 25px;
+.login input[type="text"], input[type="password"]{
+    outline: 0;
+    border-radius: 30px;
+    background: #c0c0c0;
+    width: 80%;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
-#login a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: Poly;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    text-transform: lowercase;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+.login input[type="text"]:hover, input[type="password"]:hover{
+    background-color: #FFF;
+    transition: all 1s ease 0s;
 }
 
-.black {
-    color: #000000;
-    text-decoration: none;
+.login input[type="text"]:focus, input[type="password"]:focus{
+    background-color: #FFF;
+    transition: all 1s ease 0s;
 }
 
-/* ============= CONTEUDO =========== */
-
-#conteudo {
-    position: absolute;
-    width: 1179px;
-    height: 506px;
-    left: 1px;
-    top: 134px;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-#conteudo_img {
-    position: absolute;
-    left: 0%;
-    right: 55.56%;
-    top: 0%;
-    bottom: 0%;
-
-    background: url(../img/conteudo_resized.jpg);
-}
-
-#box_conteudo_texto {
-    position: absolute;
-    left: 45.72%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    
-    background: #FFFFFF;
-}
-
-#conteudo_texto {
-    width: 400px;
-    margin: 100px auto;
-   
-    color: #000000;
-}
-
-/* ============= SOBRE NOS =========== */
-
-#sobre-nos{
-    position: absolute;
-    width: 1179px;
-    height: 315px;
-    left: 1px;
-    top: 662px;
-
-    background: #00BFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#sobrenos-title{
-    position: absolute;
-    width: 195px;
-    height: 48px;
-    left: 14px;
-    top: 9px;
-    color: #FFFFFF;
-}
-
-#sobrenos-texto{
-    position: absolute;
-    width: 531px;
-    height: 166px;
-    left: 31px;
-    top: 77px;
-
-}
-
-#feedbacks{
-    position: absolute;
-    width: 569px;
-    height: 286px;
-    left: 597px;
-    top: 17px;
-
-    background: #FFFFFF;
-}
-
-#feedback-title{
-    position: absolute;
-    width: 200px;
-    height: 20px;
-    left: 16px;
-    top: 20px;
-
-    color: #00BFFF;
-}
-
-#feedback-img{
-    position: absolute;
-    width: 200px;
-    height: 187px;
-    left: 55px;
-    top: 60px;
-
-    background: url(../img/img_feedback2.jpg);
-    
-}
-
-#feedback-text{
-    position: absolute;
-    width: 272px;
-    height: 211px;
-    left: 270px;
-    top: 50px;
-
-    color: #000000;
-}
-/* ============= FALE CONOSCO =========== */
-
-#faleConosco{
-    position: absolute;
-    width: 1179px;
-    height: 370px;
-    left: 1px;
-    top: 995px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
-}
-
-#faleConosco-title {
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    left: 15px;
-    
-    color: #00BFFF;
-    
-}
-
-
-#faleConosco-email {
-    width: 460px;
-    height: 345px;
-    float: right;  
-    background: #00BFFF;
-    
-}
-
-/* ============= RODAPE =========== */
-
-#rodape {
-    position: absolute;
-    width: 1179px;
-    height: 175px;
-    top: 1383px;
-    background: #00BFFF;
-}
-
-#rodape-logo {
-    width: 130px;
-    height: 110px;
-    margin-top: 35px;
-    margin-right: 35px;
+.login input[type="submit"]{
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 30px;
+    background-color: crimson;
+    width: 25%;
+    border: 0;
+    padding: 8px;
+    color: #FFF;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     float: right;
-    background: url(../img/logo.png);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.login input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus{
+    background-color: #00BFFF;
+    transition: background 1s ease-in 0s;
 }
 
-#menu-rodape{
-    width: 216px;
-    height: 133px;
-    margin-top: 35px;;
-    margin-left: 56px;
-    display: inline-block;
-    font-family: Poly;
-    font-size: 17px;
-    line-height: 30px;
-  }
-
-#menu-rodape a{
-
-    text-decoration: none;
-    color: #000000;
+.login p {
+    margin: 0 0 5px;
+    padding: 1px;
+    text-align: left;
 }
 
-#menu-rodape span{
-    margin-left: 20px;
-}
-
-#menu-rodape span a {
-    color: #FFFFFF;
+.login a:link, a:visited, a:active {
     font-size: 15px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+    color: crimson;
+}
+
+.login a:hover{
+    color: #FFF;
+}
+
+/* ============= FEEDBACK =========== */
+
+.feedbacks{
+    width: 619px;
+    height: 100%;
+    background: #FFF;
+    float: right;
+    border-radius: 0 30px 30px 0;
+}
+
+.feedback {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.feedback-img{
+    background: coral;
+    width: 350px;
+    height: 300px;
+    margin: 50px auto;
+
 }
