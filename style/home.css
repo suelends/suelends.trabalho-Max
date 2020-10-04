@@ -1,18 +1,20 @@
 body{
     padding: 0;
     margin: 0;
-    
+    background:url(../img/paint-345296_1920.jpg);
+    background-repeat: no-repeat;
+    opacity: 99%;
+    background-size: 100%;
 }
 .container {
 
     position: relative;
-    z-index: 1;
     opacity: 99%;
     max-width: 1024px;
     height: 600px;
     margin: 200px auto 100px;
     border-radius: 30px ;
-    box-shadow: 0 0 10px 0 #c0c0c0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
  }
 
 /* ============= AREA LOGIN =========== */
