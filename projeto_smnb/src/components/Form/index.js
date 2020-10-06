@@ -52,7 +52,7 @@ const InitialForm = () => {
         </div>
         <div className="initial-form__group">
           <label htmlFor="password">Senha</label>
-          <input id="password" name="password" type="text" onChange={onChange} />
+          <input id="password" name="password" type="password" onChange={onChange} />
         </div>
         <div>
           <button type="submit">Salvar</button>
