@@ -1,0 +1,50 @@
+.container-schedule{
+    width: 95%;
+    height: 90%;
+    background: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.all-schedule{
+    width: 75%;
+    height: 85%;
+    margin: 50px auto;
+}
+
+.all-schedule h1 { 
+    color: #00bfff;
+    font-style: italic;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #c0c0c0 ;
+}
+
+.marked-schedule{
+    width: 45%;
+    min-width: 450px;
+    height: 25%;
+    min-height: 180px;
+    margin: 20px auto;
+
+    border: solid 1px black;
+}
+
+         /* BUTTON  */
+
+.new-schedule{
+ float: right;
+ background-color: #00BFFF;
+ outline: none;
+ border: none;
+cursor: pointer;
+width: 180px;
+height: 45px;
+font-size: 1rem;
+font-weight: 600;
+color: #ffffff;
+}
+
+.new-schedule:hover{
+    background-color: #c0c0c0;
+    transition: all 1s ease;
+}

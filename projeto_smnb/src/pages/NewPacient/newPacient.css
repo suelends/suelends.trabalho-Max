@@ -1,0 +1,33 @@
+.newpacient{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.pacient{
+    width: 95%;
+    height: 90%;
+}
+
+.pacient h1 {
+    color: #00bfff;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+.pacient h2{
+    padding-left: 15px;
+    color: #c0c0c0;
+    border-bottom:solid 1px #00bfff;
+    width: 250px;
+}
+
+form {
+    margin: 50px;
+}

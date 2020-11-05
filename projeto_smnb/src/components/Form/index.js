@@ -55,7 +55,7 @@ const InitialForm = () => {
           <input id="password" name="password" type="password" onChange={onChange} />
         </div>
         <div>
-          <button type="submit">Salvar</button>
+          <button className="new-schedule" type="submit">Cadastrar</button>
         </div>
       </form>
     </div>

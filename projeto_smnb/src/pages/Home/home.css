@@ -1,13 +1,9 @@
 
-.body{
-    background:url(../../assets/img/paint-345296_1920.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+.home{
     position: relative;
     height: 100vh;
     width: 100vw;
     display: flex;
-
     }
 
 .container {

@@ -1,13 +1,20 @@
 import React from 'react';
 import InitialForm from '../../components/Form';
 import UIContainer from '../../components/Container';
+import './newPacient.css';
 
 const NewPacient = () => {
 
   return (
-    <UIContainer>
-      <InitialForm />
-    </UIContainer>
+    <>
+      <div className="newpacient">
+        <div className='pacient'>
+        <UIContainer>
+          <InitialForm />
+        </UIContainer>
+        </div>
+      </div>
+    </>
   );
 }
 
