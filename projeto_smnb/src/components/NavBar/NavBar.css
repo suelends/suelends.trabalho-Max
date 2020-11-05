@@ -73,3 +73,9 @@ li {
 span {
     margin-left: 16px;
 }
+
+.navbar img{
+    right: 0;
+    top: 0;
+    position: absolute;
+}

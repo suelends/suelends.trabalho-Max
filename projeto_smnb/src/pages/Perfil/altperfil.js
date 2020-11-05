@@ -1,17 +1,17 @@
 import React from 'react';
 import InitialForm from '../../components/Form';
 import UIContainer from '../../components/Container';
-import './newPacient.css';
+import './altperfil.css';
 
-const NewPacient = () => {
+const Altperfil = () => {
 
   return (
     <>
       <div className="newpacient">
         <div className='pacient'>
           <UIContainer>
-            <h1>Cadastre-se</h1>
-            <h2>Novo Cadastro</h2>
+            <h1>Meu Perfil</h1>
+            <h2>Editar Cadastro</h2>
             <InitialForm />
           </UIContainer>
         </div>
@@ -20,4 +20,4 @@ const NewPacient = () => {
   );
 }
 
-export default NewPacient;
+export default Altperfil;

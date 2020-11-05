@@ -34,8 +34,6 @@ const InitialForm = () => {
 
   return (
     <div>
-      <h1>Cadastre-se</h1>
-      <h2>Novo Cadastro</h2>
 
       <form onSubmit={onSubmit}>
         <div className="initial-form__group">
@@ -45,6 +43,10 @@ const InitialForm = () => {
         <div className="initial-form__group">
           <label htmlFor="email">Email</label>
           <input id="email" name="email" type="text" onChange={onChange} />
+        </div>
+        <div className="initial-form__group">
+          <label htmlFor="endereco">Endereco</label>
+          <input id="endereco" name="endereco" type="text" onChange={onChange} />
         </div>
         <div className="initial-form__group">
           <label htmlFor="phone">Telefone</label>

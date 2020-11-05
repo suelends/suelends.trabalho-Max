@@ -5,6 +5,7 @@ import Error from './pages/Error';
 import NewPacient from './pages/NewPacient';
 import Schedule from './pages/Schedule/schedule';
 import Perfil from './pages/Perfil/perfil';
+import AltPerfil from './pages/Perfil/altperfil';
 
 const Routes = ()  =>{
     return(
@@ -14,6 +15,7 @@ const Routes = ()  =>{
                 <Route exact path="/newpacient" component={NewPacient}/>
                 <Route exact path="/schedule" component={Schedule}/>
                 <Route exact path="/perfil" component={Perfil}/>
+                <Route exact path="/perfil/altperfil" component={AltPerfil}/>
                 <Route path="*" component={Error}/>
             </Switch>
         </BrowserRouter>

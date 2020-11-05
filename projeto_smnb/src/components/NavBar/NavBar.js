@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { SidebarData } from './SidebarData';
 import { IconContext } from 'react-icons';
+import logo from '../../assets/img/logo.png';
 import './NavBar.css';
 
 import * as AiIcons from "react-icons/ai";
@@ -19,6 +20,9 @@ const [sidebar, setSidebar] = useState(false)
                 <Link to="#" className='menu-bars'>
                     <VscIcons.VscThreeBars onClick={showSidebar}/>
                 </Link>
+                <div className="logo-img">
+                    <img src={logo} alt="logo"/>
+                </div>
             </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items' onClick={showSidebar}>
