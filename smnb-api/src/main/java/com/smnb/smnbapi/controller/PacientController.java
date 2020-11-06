@@ -1,11 +1,14 @@
 package com.smnb.smnbapi.controller;
 
+import com.smnb.smnbapi.model.Login;
 import com.smnb.smnbapi.model.Pacient;
 import com.smnb.smnbapi.repository.PacientRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
+
 @CrossOrigin
 @RestController
 @RequestMapping({"/pacients"})
@@ -60,5 +63,18 @@ public class PacientController {
                     repository.deleteById(id);
                     return ResponseEntity.ok().build();
                 }).orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping(path = {"/login"})
+    @CrossOrigin
+    public ResponseEntity<Boolean> login(@RequestBody Login login){
+        Optional<Pacient> pacient = Optional.ofNullable(repository.findByEmail(login.getEmail()));
+
+        if (pacient.isPresent() && pacient.get().getPassword() != null && pacient.get().getPassword().equals(login.getPassword())){
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+
     }
 }
