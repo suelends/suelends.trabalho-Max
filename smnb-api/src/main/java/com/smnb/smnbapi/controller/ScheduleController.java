@@ -15,6 +15,11 @@ public class ScheduleController {
 
     ScheduleController(ScheduleRepository scheduleRepository) { this.scheduleRepository = scheduleRepository;}
 
+    @GetMapping
+    @CrossOrigin
+    public List findAll(){
+        return scheduleRepository.findAll();
+    }
 
     @GetMapping(path = {"/{email}"})
     @CrossOrigin

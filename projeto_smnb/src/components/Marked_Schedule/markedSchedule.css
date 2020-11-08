@@ -1,0 +1,21 @@
+.marked-schedule{
+    background-color: #c0c0c0;
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.marked-schedule h2{
+    color: #ffffff;
+}
+
+.marked-schedule p {
+    text-align: left;
+    font-weight: 600;
+}
+
+.marked-schedule label{
+    font-weight: normal;
+    font-style: italic;
+}

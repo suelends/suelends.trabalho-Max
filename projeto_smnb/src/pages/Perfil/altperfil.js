@@ -1,23 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import InitialForm from '../../components/Form';
 import UIContainer from '../../components/Container';
+// import ApiPacients from '../../utils/ApiPacients';
 import './altperfil.css';
 
-const Altperfil = () => {
+class Altperfil extends Component {
 
-  return (
-    <>
-      <div className="newpacient">
-        <div className='pacient'>
-          <UIContainer>
-            <h1>Meu Perfil</h1>
-            <h2>Editar Cadastro</h2>
-            <InitialForm />
-          </UIContainer>
+
+  render() {
+    return (
+      <>
+        <div className="newpacient">
+          <div className='pacient'>
+            <UIContainer>
+              <h1>Meu Perfil</h1>
+              <h2>Editar Cadastro</h2>
+              <InitialForm />
+            </UIContainer>
+          </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
+  }
 }
 
 export default Altperfil;

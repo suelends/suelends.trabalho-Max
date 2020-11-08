@@ -30,17 +30,7 @@
     height: 160px;
 }
 
-.marked-schedule{
-    background-color: #c0c0c0;
-    width: 400px;
-    margin: 10px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
 
-.marked-schedule p {
-    text-align: left;
-}
 
    /* MODAL */
    
@@ -56,22 +46,6 @@
 .new-consulta h2{
     color: #00bfff;
     margin: 0;
-}
-
-.form-modal{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.forms{
-    display: flex;
-    flex-direction: column;
-    margin: 15px ;
-    height: 25px;
-    width: 250px;
 }
 
 
@@ -96,15 +70,6 @@ text-decoration: none;
     background-color: #c0c0c0;
     transition: all 1s ease;
 }
-
-.form-modal .btn-cancelar {
-    margin-top: 30px;
-    color: #00bfff;
-    font-size: 1em;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
-    height: 36px;
-    background-color: rgb(226, 243, 248);
-  }
 
 .btn-cancelar {
     outline: none;

@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import ApiPacients from '../../utils/ApiPacients';
 import './home.css'; 
 
 class Home extends Component {
+
+
+    state = {
+        pacients: []
+    }
+
+    constructor(){
+        super();
+            ApiPacients.get('/').then(res => {
+                console.log(res.data)
+                this.setState({pacients: res.data})
+            })
+        }
+    
+
   render() {
     return (
         <div className= "home">
