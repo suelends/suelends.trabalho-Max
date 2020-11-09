@@ -66,7 +66,7 @@ public class PacientController {
                 }).orElse(ResponseEntity.notFound().build());
     }
 
-    @GetMapping(path = {"/login"})
+    @PostMapping(path = {"/login"})
     @CrossOrigin
     public ResponseEntity<Boolean> login(@RequestBody Login login){
         Optional<Pacient> pacient = Optional.ofNullable(repository.findByEmail(login.getEmail()));

@@ -9,8 +9,8 @@ class Home extends Component {
     constructor() {
         super();
         this.state = {
-            email: '',
-            password: '',
+            email: "",
+            password: "",
             error: '',
         };
 
@@ -37,25 +37,22 @@ class Home extends Component {
         });
     }   
         handleSubmit(evt) {
+
+            let body = {email: this.state.email,
+                        password: this.state.password}
             evt.preventDefault();
 
-            axios({
-                method: 'get',
-                url: 'http://localhost:8080/pacients/login',
-                data: {
-                  email: this.state.email,
-                  password: this.state.password
+
+            axios.post('http://localhost:8080/pacients/login', body).catch(function (error) {
+                if (error.response) {
+                  console.log(error.response.data);
+                  console.log(error.response.status);
+                  alert("Usuário inexistente")
+                } else {
+                    alert("Logado")
                 }
               });
-
-            // axios.get('http://localhost:8080/pacients/login')
-            //     .catch(function (error) {
-            //         if (error.response === 200) {
-            //             alert('cadastrado')
-            //         } else {
-            //             alert('odeio isso')
-            //         }
-            //     });
+            
         }
     
 
@@ -65,13 +62,13 @@ class Home extends Component {
                 <div className="container">
                     <section className="area-login">
                         <div className="logo"></div>
-                        <form className="login" method="GET" onSubmit={this.handleSubmit} >
+                        <form className="login" method="GET" onSubmit={this.handleSubmit}>
                             <input type="email" data-test="email" value={this.state.email}
                                 onChange={this.handleUserChange} placeholder="E-mail"
-                                required autoFocus autoComplete="off" />
+                                 autoFocus autoComplete="off" />
                             <input type="password" data-test="password" value={this.state.password} onChange={this.handlePassChange}
                                 id="senha" placeholder="Senha"
-                                maxLength="12" required />
+                                maxLength="12"  />
                             <p><Link to="/newpacient">cadastre-se</Link></p>
                             <button type="submit" value="Entre" data-test="submit"><Link to="/schedule">Entre</Link></button>
                         </form>
