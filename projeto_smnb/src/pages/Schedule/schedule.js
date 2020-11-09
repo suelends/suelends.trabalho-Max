@@ -23,6 +23,7 @@ class Schedule extends Component {
 
     deleteSchedule = async (id) => {
       let data = await ApiSchedule.delete(`/${id}`);
+      alert('Cancelado com Sucesso')
       this.getSchedules();
     }
 

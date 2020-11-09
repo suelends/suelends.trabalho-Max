@@ -32,13 +32,13 @@ constructor(){
               <div className="content-data">
                 <h2>Dados pessoais</h2>
                 <div className="data">
-                  <p>Nome: {this.state.pacients.map(pacients => <label> {pacients.name} </label>)}</p>
+                  <p>Nome: {this.state.pacients.map(pacients => <label key={pacients.id}> {pacients.name} </label>)}</p>
                 </div>
               </div>
               <div className="content-data">
                 <h2>Endereco</h2>
                 <div className="data">
-                  <p>Endereço: {this.state.pacients.map(pacients => <label> {pacients.name} </label>)} </p>
+                  <p>Endereço: {this.state.pacients.map(pacients => <label> {pacients.endereco} </label>)} </p>
                 </div>
               </div>
               <div className="content-data">

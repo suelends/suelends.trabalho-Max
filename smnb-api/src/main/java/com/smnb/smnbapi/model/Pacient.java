@@ -22,7 +22,16 @@ public class Pacient {
     private String name;
     private String email;
     private String phone;
+    private String endereco;
     private String password;
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
 
     public Long getId() {
         return id;

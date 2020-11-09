@@ -6,9 +6,8 @@ import './Form.css';
 const initialValue = {
   name: '',
   email: '',
-  phone: '',
   endereco: '',
-  password: '',
+  phone: ''
 }
 
 const InitialForm = () => {
@@ -25,11 +24,11 @@ const InitialForm = () => {
     ev.preventDefault();
 
 
-    axios.post('http://localhost:8080/pacients', values)
+    axios.put('http://localhost:8080/pacients/184', values)
     .then(() => {
         console.log(values);
-        alert('Cadastrado com Sucesso')
-        history.push('/');
+        alert('Atualizado com Sucesso')
+        history.push('/perfil');
        });
   }
 
@@ -39,7 +38,7 @@ const InitialForm = () => {
       <form onSubmit={onSubmit}>
         <div className="initial-form__group">
           <label htmlFor="name">Nome</label>
-          <input id="name" name="name" type="text" onChange={onChange} />
+          <input id="name" name="name" type="text" vonChange={onChange} />
         </div>
         <div className="initial-form__group">
           <label htmlFor="email">Email</label>
@@ -53,12 +52,8 @@ const InitialForm = () => {
           <label htmlFor="phone">Telefone</label>
           <input id="phone" name="phone" type="text" onChange={onChange} />
         </div>
-        <div className="initial-form__group">
-          <label htmlFor="password">Senha</label>
-          <input id="password" name="password" type="password" onChange={onChange} />
-        </div>
         <div>
-          <button className="new-schedule" type="submit">Cadastrar</button>
+          <button className="new-schedule" type="submit">Atualizar</button>
         </div>
       </form>
     </div>

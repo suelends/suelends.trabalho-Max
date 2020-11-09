@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InitialForm from '../../components/Form';
+import InitialForm from '../../components/Form/FormUpdate';
 import UIContainer from '../../components/Container';
 // import ApiPacients from '../../utils/ApiPacients';
 import './altperfil.css';

@@ -39,19 +39,19 @@ const ScheduleForm = () => {
     <form className='form-modal' onSubmit={onSubmit}>
       <div className='forms'>
         <label htmlFor="especialidade">Especialidade</label>
-        <input id="especialidade" name="especiality" type="text" onChange={onChange} />
+        <input id="especialidade" name="especiality" type="text" autoComplete='off' onChange={onChange} />
       </div>
       <div className='forms'>
         <label htmlFor="profissional">Profissional</label>
-        <input id="profissional" name="doctorName" type="text" onChange={onChange} />
+        <input id="profissional" name="doctorName" type="text" autoComplete='off' onChange={onChange} />
       </div>
       <div className='forms'>
         <label htmlFor="data">Data</label>
-        <input id="data" name="data" type="text" onChange={onChange} />
+        <input id="data" name="data" type="text" autoComplete='off' onChange={onChange} />
       </div>
       <div className='forms'>
         <label htmlFor="hora">Horário</label>
-        <input id="hora" name="hour" type="text" onChange={onChange} />
+        <input id="hora" name="hour" type="text" autoComplete='off' onChange={onChange} />
       </div>
       <div>
         <button className="btn-cancelar" type="submit" >Agendar</button>

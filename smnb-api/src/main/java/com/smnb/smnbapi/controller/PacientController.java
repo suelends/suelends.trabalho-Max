@@ -49,6 +49,7 @@ public class PacientController {
                     record.setName(pacient.getName());
                     record.setEmail(pacient.getEmail());
                     record.setPhone(pacient.getPhone());
+                    record.setEndereco(pacient.getEndereco());
                     record.setPassword(pacient.getPassword());
                     Pacient updated = repository.save(record);
                     return ResponseEntity.ok().body(updated);
